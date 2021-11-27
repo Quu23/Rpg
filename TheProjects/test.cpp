@@ -25,15 +25,17 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
         
         DrawCircleAA(x, 300, 10,500, cl,true);
+        DrawCircleAA(300, 300, 30, 30, cl, true);
+
 
         if (CheckHitKey(KEY_INPUT_ESCAPE) != 0) {
             break;
         }
         if (CheckHitKey(KEY_INPUT_D) != 0) {
-            x++;
+            x = x + 100;
         }
         if (CheckHitKey(KEY_INPUT_A) != 0) {
-            x--;
+            x = x - 100;
         }
 
     }
